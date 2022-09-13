@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TestList>
+	<ValidTest incomingData=" " expected=""/>
+  <ValidTest incomingData="" expected=""/>
+  <ValidTest incomingData="(1+(1/1*1)-1%1+p1-m1)" expected="(1+(1/1*1)-1%1+p1-m1)"/>
+  <ValidTest incomingData="1" expected="1"/>
+  <ValidTest incomingData="(1+1)" expected="(1+1)"/>
+  <ValidTest incomingData="p1+1" expected="p1+1"/>
+  <ValidTest incomingData="m1+1" expected="m1+1"/>
+  <ValidTest incomingData="m1+1" expected="m1+1"/>
+  <InValidTest incomingData="#" expected="&#38;Error 02 at &lt;0&gt; — Невідомий оператор на &lt;0&gt; символі."/>
+  <InValidTest incomingData="(" expected="&#38;Error 05 — Незавершений вираз."/>
+  <InValidTest incomingData="1+-1" expected="&#38;Error 04 at &#60;2&#62; — Два підряд оператори на &#60;2&#62; символі."/>
+  <InValidTest incomingData="1*/1" expected="&#38;Error 04 at &#60;2&#62; — Два підряд оператори на &#60;2&#62; символі."/>
+  <InValidTest incomingData="1//1" expected="&#38;Error 04 at &#60;2&#62; — Два підряд оператори на &#60;2&#62; символі."/>
+  <InValidTest incomingData="1--1" expected="&#38;Error 04 at &#60;2&#62; — Два підряд оператори на &#60;2&#62; символі."/>
+  <InValidTest incomingData="1)1" expected="&#38;Error 03 — Невірна синтаксична конструкція вхідного виразу."/>
+  <InValidTest incomingData="()1+1" expected="&#38;Error 03 — Невірна синтаксична конструкція вхідного виразу."/>
+  <InValidTest incomingData="(*1" expected="&#38;Error 03 — Невірна синтаксична конструкція вхідного виразу."/>
+  <InValidTest incomingData="(/1" expected="&#38;Error 03 — Невірна синтаксична конструкція вхідного виразу."/>
+  <InValidTest incomingData="(/1" expected="&#38;Error 03 — Невірна синтаксична конструкція вхідного виразу."/>
+  <InValidTest incomingData=")p" expected="&#38;Error 03 — Невірна синтаксична конструкція вхідного виразу."/>
+  <InValidTest incomingData=")m" expected="&#38;Error 03 — Невірна синтаксична конструкція вхідного виразу."/>
+  <InValidTest incomingData="m)" expected="&#38;Error 03 — Невірна синтаксична конструкція вхідного виразу."/>
+  <InValidTest incomingData="p/1" expected="&#38;Error 03 — Невірна синтаксична конструкція вхідного виразу."/>
+  <InValidTest incomingData="p*1" expected="&#38;Error 03 — Невірна синтаксична конструкція вхідного виразу."/>
+</TestList>
